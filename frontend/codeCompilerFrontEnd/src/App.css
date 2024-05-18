@@ -1,0 +1,96 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  /* text-align: center; */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header span {
+  scale: 1.5;
+  width: 20px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.codeEditor {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.codeEditor__heading {
+  display: flex;
+  gap: 1rem;
+  padding-block: 1rem;
+}
+
+.codeOutput {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  /* width: 100%; */
+  height: 400px;
+  padding: 1rem;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  transition: background-color 0.3s, color 0.3s;
+  /* padding-right: 30px;
+  box-sizing: content-box; */
+}
+
+button {
+  /* padding: 10px 20px; */
+  /* font-size: 16px; */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light mode styles */
+body.light-mode {
+  background-color: #ffffff;
+  color: #08052a;
+}
+
+textarea.light-mode {
+  background-color: #ffffff;
+  color: #08052a;
+}
+
+button.light-mode {
+  background-color: #08052a;
+  color: #ffffff;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #08052a;
+  color: #ffffff;
+}
+
+textarea.dark-mode {
+  background-color: #08052a;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+button.dark-mode {
+  background-color: #ffffff;
+  color: #08052a;
+}
